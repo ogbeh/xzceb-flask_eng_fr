@@ -1,14 +1,14 @@
-from translator import french_to_english, english_to_french
+from translator import *
 import unittest
 
 class TestUtils(unittest.TestCase):
     def test_frenchToEnglish(self):
-        self.assertEqual(french_to_english("Bonjour"),"Hello")
-        self.assertNotEqual(french_to_english("Hola"), "Bonjour")
+        self.assertEqual(frenchToEnglish("Bonjour"),"Hello")
+        self.assertNotEqual(frenchToEnglish("Hola"), "Bonjour")
 
     def test_englishToFrench(self):
-        self.assertEqual(english_to_french("Hello"),"Bonjour")
-        self.assertNotEqual(french_to_english("Hola"), "Hello")
+        self.assertEqual(englishFoFrench("Hello"),"Bonjour")
+        self.assertNotEqual(frenchToEnglish("Hola"), "Hello")
 
 
 if __name__ == '__main__':
